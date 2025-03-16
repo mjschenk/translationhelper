@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Underser\TranslationHelper\Test\Unit\Service\Filter;
+namespace WebThings\TranslationHelper\Test\Unit\Service\Filter;
 
 use Magento\Framework\TranslateInterface;
 use PHPUnit\Framework\TestCase;
-use Underser\TranslationHelper\Service\Filter\FilterInterface;
-use Underser\TranslationHelper\Service\Filter\TranslatedPhrasesFilter;
+use WebThings\TranslationHelper\Service\Filter\FilterInterface;
+use WebThings\TranslationHelper\Service\Filter\TranslatedPhrasesFilter;
 
 /**
  * Class TranslatedPhrasesFilterTest.
  *
- * @package Underser\TranslationHelper\Test\Unit\Service\Filter
+ * @package WebThings\TranslationHelper\Test\Unit\Service\Filter
  */
 class TranslatedPhrasesFilterTest extends TestCase
 {

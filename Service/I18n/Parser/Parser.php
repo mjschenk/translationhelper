@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Underser\TranslationHelper\Service\I18n\Parser;
+namespace WebThings\TranslationHelper\Service\I18n\Parser;
 
 use Magento\Setup\Module\I18n;
 use Magento\Setup\Module\I18n\Parser\Parser as CoreParser;
@@ -11,7 +11,7 @@ use Magento\Setup\Module\I18n\Parser\AdapterInterface;
 /**
  * Class Parser.
  *
- * @package Underser\TranslationHelper\Service\I18n\Parser
+ * @package WebThings\TranslationHelper\Service\I18n\Parser
  */
 class Parser extends CoreParser
 {

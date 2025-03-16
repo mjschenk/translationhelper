@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Underser\TranslationHelper\Test\Unit\Console\Command;
+namespace WebThings\TranslationHelper\Test\Unit\Console\Command;
 
 use Magento\Framework\App\State;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Tester\CommandTester;
-use Underser\TranslationHelper\Console\Command\I18nTranslationCollector;
-use Underser\TranslationHelper\Service\Generator\FilterableGenerator;
+use WebThings\TranslationHelper\Console\Command\I18nTranslationCollector;
+use WebThings\TranslationHelper\Service\Generator\FilterableGenerator;
 
 if (!defined('BP')) {
     define('BP', '');
@@ -19,7 +19,7 @@ if (!defined('BP')) {
 /**
  * Class CommandTest.
  *
- * @package Underser\TranslationHelper\Test\Unit
+ * @package WebThings\TranslationHelper\Test\Unit
  */
 class CommandTest extends TestCase
 {

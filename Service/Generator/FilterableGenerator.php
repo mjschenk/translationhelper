@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace Underser\TranslationHelper\Service\Generator;
+namespace WebThings\TranslationHelper\Service\Generator;
 
 use Magento\Setup\Module\I18n\Dictionary\Generator;
 use Magento\Setup\Module\I18n\Dictionary\Options;
 use Magento\Setup\Module\I18n\Factory;
 use Magento\Setup\Module\I18n\ParserInterface;
-use Underser\TranslationHelper\Service\Filter\FilterInterface;
+use WebThings\TranslationHelper\Service\Filter\FilterInterface;
 use UnexpectedValueException;
 
 /**
  * Class FilterableGenerator.
  *
- * @package Underser\TranslationHelper\Service\Generator
+ * @package WebThings\TranslationHelper\Service\Generator
  */
 class FilterableGenerator extends Generator
 {

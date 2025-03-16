@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Underser\TranslationHelper\Console\Command;
+namespace WebThings\TranslationHelper\Console\Command;
 
 use Magento\Framework\App\Area;
 use Magento\Framework\App\State;
@@ -13,12 +13,12 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Underser\TranslationHelper\Service\Generator\FilterableGenerator;
+use WebThings\TranslationHelper\Service\Generator\FilterableGenerator;
 
 /**
  * Class I18nTranslationCollector.
  *
- * @package Underser\TranslationHelper\Console\Command
+ * @package WebThings\TranslationHelper\Console\Command
  */
 class I18nTranslationCollector extends Command
 {

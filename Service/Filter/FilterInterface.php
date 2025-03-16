@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Underser\TranslationHelper\Service\Filter;
+namespace WebThings\TranslationHelper\Service\Filter;
 
 /**
  * Interface FilterInterface.
  *
- * @package Underser\TranslationHelper\Service\Filter
+ * @package WebThings\TranslationHelper\Service\Filter
  */
 interface FilterInterface
 {

@@ -1,9 +1,12 @@
-[![Build Status](https://travis-ci.org/underser/module-translation-helper.svg?branch=master)](https://travis-ci.org/underser/module-translation-helper)
+[![Build Status](https://travis-ci.org/webthings/module-translation-helper.svg?branch=master)](https://travis-ci.org/webthings/module-translation-helper)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=square)
 
-# Underser_TranslationHelper Magento 2 module
+# WebThings_TranslationHelper Magento 2 module
 
 This module will allow you to grab translation files with the ability to exclude already translated ones.
+
+## About
+This module is a fork of [underser/module-translation-helper](https://github.com/underser/module-translation-helper), originally developed by Roman Sliusar. It has been enhanced to support PHP 8.2 and Magento versions 2.2.x through 2.4.x.
 
 ### Requirements
 
@@ -15,7 +18,7 @@ Tested on Magento v2.3.3 and v2.2.10 (will require at least v2.2 from you)
 
 Run
 ```
-composer require underser/module-translation-helper
+composer require webthings/translationhelper
 
 ./bin/magento setup:upgrade
 ```
@@ -39,7 +42,3 @@ will scan whole magento directory, and create fr_FR.csv file inside *var* folder
 ./bin/magento i18n:translation-helper --locale fr_FR  --output ./var/fr_FR.csv ./app/code/Vendor/Module
 ```
 will scan only *app/code/Vendor/Module*, and create fr_FR.csv file inside *var* folder. This file will contain all phrases that not translated for fr_FR locale
-
-### License
-
-MIT © 2019 [Roman Sliusar](https://github.com/underser/)
