@@ -1,7 +1,6 @@
 {
     "name": "webthings/translationhelper",
     "description": "Translation Helper for Magento 2, enhanced for broad version compatibility",
-    "version": "1.0.0",
     "config": {
         "sort-packages": true
     },
@@ -22,7 +21,7 @@
     },
     "require-dev": {
         "magento/magento-coding-standard": "^4.0",
-        "phpunit/phpunit": "~6.5.0"
+        "phpunit/phpunit": "^7.5"
     },
     "repositories": [
         {
