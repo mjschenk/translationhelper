@@ -74,7 +74,7 @@ class I18nTranslationCollector extends Command
      */
     protected function configure(): void
     {
-        $this->setName('i18n:translation-helper');
+        $this->setName('i18n:translationhelper');
         $this->setDescription('Allow grab translation files with the ability to exclude already translated ones.');
         $this->setDefinition(array_merge([
             new InputArgument(
