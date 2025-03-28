@@ -42,3 +42,14 @@ will scan whole magento directory, and create fr_FR.csv file inside *var* folder
 ./bin/magento i18n:translation-helper --locale fr_FR  --output ./var/fr_FR.csv ./app/code/Vendor/Module
 ```
 will scan only *app/code/Vendor/Module*, and create fr_FR.csv file inside *var* folder. This file will contain all phrases that not translated for fr_FR locale
+
+### Common errors
+
+#### Missed phrase
+Most often, the "Missed phrase" error is caused by the third-party extensions when the system tries to translate an empty string like __(''). Correspondingly to learn what module is causing the issues you have to run the following command: 
+```
+grep -rnw . -e "__('')" -e '__("")'
+```
+Once you track down those files you have to change __('')   to  ''  and  __("")  to  "" in the file's code.
+
+After you made the required changes in the corresponding files, you can to regenerate the translation dictionary. The error should be eliminated. 
