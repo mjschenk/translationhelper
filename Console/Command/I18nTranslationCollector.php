@@ -48,7 +48,7 @@ class I18nTranslationCollector extends Command
     public function __construct(
         FilterableGenerator $directoryGenerator,
         State $state,
-        string $name = null,
+        ?string $name = null,
         array $filters = []
     ) {
         $this->directoryGenerator = $directoryGenerator;
@@ -123,7 +123,7 @@ class I18nTranslationCollector extends Command
         $this->directoryGenerator->generate(
             $directory,
             $input->getOption(self::INPUT_KEY_OUTPUT),
-            false,
+            'magento',
             $filters
         );
 
