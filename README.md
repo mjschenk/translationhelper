@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/webthings/module-translation-helper.svg?branch=master)](https://travis-ci.org/webthings/module-translation-helper)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=square)
+![Magento](https://img.shields.io/badge/Magento-2.2%20%7C%202.3%20%7C%202.4-orange?logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iLTIzLjUgMCAzMDMgMzAzIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIj48cGF0aCBkPSJNMTQ0Ljg1MiA5MC42N3YxNzIuMTkybC0xNi45MzMgMTAuMzQ5LTE2Ljk0Ni0xMC40MDRWOTAuODAzbC00My44NzggMjcuMDE2djE0Ny4yNTVsNjAuODI0IDM3LjIxNyA2MS4zMzktMzcuNDgyVjExNy43MjVMMTQ0Ljg1MiA5MC42N3pNMTI3LjkxOSAwTDAgNzcuNTAydjE0Ny4yNzRsMzMuMjIzIDE5LjU3MlY5Ny4wNmw5NC43MjItNTcuNTk2IDk0LjgxIDU3LjUxMi4zOTEuMjIzLS4wNDIgMTQ2LjkyOUwyNTYgMjI0Ljc3NlY3Ny41MDJMMTI3LjkxOSAweiIgZmlsbD0iI0ZGRkZGRiIvPjwvc3ZnPg==)
+![PHP](https://img.shields.io/badge/PHP-7.*%20|%208.*-7377ad?logo=php&logoColor=white&labelColor=444)
 
 # WebThings_TranslationHelper Magento 2 module
 
@@ -12,7 +12,7 @@ This module is a fork of [underser/module-translation-helper](https://github.com
 
 **Magento 2 platform:**
 
-Tested on Magento v2.3.3 and v2.2.10 (will require at least v2.2 from you)
+Tested on Magento v2.4.7 and v2.2.10 (will require at least v2.2 from you)
 
 ### How to install
 
