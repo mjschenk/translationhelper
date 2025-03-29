@@ -8,6 +8,7 @@ use Magento\Setup\Module\I18n\Dictionary\Generator;
 use Magento\Setup\Module\I18n\Dictionary\Options;
 use Magento\Setup\Module\I18n\Factory;
 use Magento\Setup\Module\I18n\ParserInterface;
+use Magento\Framework\Module\Manager;
 use WebThings\TranslationHelper\Service\Filter\FilterInterface;
 use UnexpectedValueException;
 
@@ -18,6 +19,11 @@ use UnexpectedValueException;
  */
 class FilterableGenerator extends Generator
 {
+    /**
+     * @var Manager
+     */
+    protected $moduleManager;
+
     /**
      * @var FilterInterface[]
      */
@@ -37,9 +43,12 @@ class FilterableGenerator extends Generator
         ParserInterface $contextualParser,
         Factory $factory,
         Options\ResolverFactory $optionsResolver,
-        array $filters = []
+        Manager $moduleManager,
+        array $filters = [],
+
     ) {
         parent::__construct($parser, $contextualParser, $factory, $optionsResolver);
+        $this->moduleManager = $moduleManager;
         $this->filters = $filters;
     }
 
@@ -67,7 +76,19 @@ class FilterableGenerator extends Generator
             throw new UnexpectedValueException('No phrases found in the specified dictionary file.');
         }
         foreach ($phraseList as $phrase) {
-            $this->getDictionaryWriter($outputFilename)->write($phrase);
+            $contextType = $phrase->getContextType();
+            $contextValue = (array) $phrase->getContextValue();
+            if ($contextType == 'module' && $contextValue) {
+                $enabledModules = array_filter($contextValue, function ($moduleName) {
+                    return $this->moduleManager->isEnabled($moduleName);
+                });
+                if (!empty($enabledModules)) {
+                    $this->getDictionaryWriter($outputFilename)->write($phrase);
+                }
+            }
+            else {
+                $this->getDictionaryWriter($outputFilename)->write($phrase);
+            }
         }
         $this->writer = null;
     }
